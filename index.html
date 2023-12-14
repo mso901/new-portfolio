@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>민선옥의 포트폴리오</title>
+  <link rel="icon" href="img/free-icon-passion-4953119.png">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/defult.css">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="inner flex">
+      <h1><a href="index.html">SUNOK</a></h1>
+      <nav>
+        <ul class="flex">
+          <li><a href="#home"><span class="bx bx-home"></span> <span>Home</span></a></li>
+          <li><a href="#about"><span class="bx bx-user"></span> <span>About Me</span></a></li>
+          <li><a href="#portfolio"><span class="bx bx-book-content"></span> <span>Portfolio</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home">
+      <div class="home_intro">
+        <span class="bg01"></span>
+        <span class="bg02"></span>
+        <span class="bg03"></span>
+        <span class="bg04"></span>
+        <h3 class="home_title">
+          <span>I am</span>
+          <span>a developing</span>
+          <span>front-end</span>
+          <span>publisher</span>
+        </h3>
+      </div>
+    </section><!--//home-->
+    <div id="about">
+      <section class="about_me">
+        <div class="inner">
+          <h2>About me</h2>
+          <ul>
+            <li>✦ 민선옥</li>
+            <li>✦ 94.10.05</li>
+            <li>✦ 경상대학교 심리학과 졸업(경제학과 복수전공)</li>
+            <li>✦ 공인회계사 준비 후 웹퍼블리셔 과정 수강</li>
+          </ul>
+        </div>
+      </section><!--//about_me-->
+      <section class="certificate">
+        <div class="inner">
+          <h2>certificate</h2>
+          <ul>
+            <li>👉 웹디자인기능사</li>
+            <li>👉 컴퓨터그래픽스기능사</li>
+            <li>👉 GTQ(포토샵) 1급</li>
+          </ul>
+        </div>
+      </section><!--//certificate-->
+      <section class="skills">
+        <div class="inner">
+          <h2>Skills</h2>
+          <ul class="flex">
+            <li>
+              <img src="img/skills/html.png" alt="html">
+              <span class="skill">HTML</span>
+            </li>
+            <li>
+              <img src="img/skills/css.png" alt="html">
+              <span class="skill">CSS</span>
+            </li>
+            <li>
+              <img src="img/skills/js.png" alt="html">
+              <span class="skill">JavaScript</span>
+            </li>
+            <li>
+              <img src="img/skills/icons8-jquery-150.png" alt="html">
+              <span class="skill">jQuery</span>
+            </li>
+            <li>
+              <img src="img/skills/apple-touch-icon.png" alt="html">
+              <span class="skill">bootstrap</span>
+            </li>
+            <li>
+              <img src="img/skills/icons8-git-150.png" alt="html">
+              <span class="skill">git</span>
+            </li>
+            <li>
+              <img src="img/skills/icons8-figma-144.png" alt="html">
+              <span class="skill">figma</span>
+            </li>
+            <li>
+              <img src="img/skills/free-icon-photoshop-5968520.png" alt="html">
+              <span class="skill">Photoshop</span>
+            </li>
+            <li>
+              <img src="img/skills/free-icon-illustrator-5968472.png" alt="html">
+              <span class="skill">illustrator</span>
+            </li>
+          </ul>
+        </div>
+      </section><!--//skills-->
+    </div><!--//#about-->
+    <section class="portfolio">     
+      <h2>Works</h2>
+      <ul id="portfolio-flters">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-new">New</li>
+        <li data-filter=".filter-plan">Plan</li>
+        <li data-filter=".filter-clone">Clone</li>
+        <li data-filter=".filter-challenge">Challenge</li>
+      </ul>
+
+      <div class="portfolio-item filter-new flex">
+        <p><a href="https://mso901.github.io/HiEgo/"><img src="img/portfolio/hiego_mockup.png"alt=""></a></p>
+        <div class="portfolio_info">
+          <span>New</span>
+          <ul>
+            <li><strong>사이트명</strong>HiEgo</li>
+            <li><strong>Skill</strong>grid, flex, slick-slide</li>
+            <li><strong>기획의도</strong>심리검사를 등재할 수 있는 플랫폼을 만들어 소비자와 판매자의 연계를 더욱 쉽게 할 수 있도록 하였습니다.</li>
+          </ul>
+          <a href="https://mso901.github.io/HiEgo/">사이트 바로가기</a>
+        </div><!--//portfolio_info-->
+      </div><!--//portfolio-item-->
+
+      <div class="portfolio-item filter-new flex">
+        <p><a href="https://mso901.github.io/goroot/"><img src="img/portfolio/goroot_mockup.png"alt=""></a></p>
+        <div class="portfolio_info">
+          <span>New</span>
+          <ul>
+            <li><strong>사이트명</strong>goroot(고루트)</li>
+            <li><strong>Skill</strong>flex, slick-slide,html5</li>
+            <li><strong>기획의도</strong>유통단계의 단축으로 소비자와 판매자가 합리적인 거래를 할 수 있도록 농수산물 직거래 사이트를 만들었습니다.</li>
+          </ul>
+          <a href="https://mso901.github.io/goroot/">사이트 바로가기</a>
+        </div><!--//portfolio_info-->
+      </div><!--//portfolio-item-->
+
+      <div class="portfolio-item filter-plan flex">
+        <p><a href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1"><img src="img/portfolio/sidmool_1.png"alt=""></a></p>
+        <div class="portfolio_info">
+          <span>Plan[기획]</span>
+          <ul>
+            <li><strong>사이트명</strong>시드물</li>
+            <li><strong>Skill</strong>flex, slick-slide,html5</li>
+            <li><strong>기획의도</strong>기존의 사용하기 힘들고 복잡한 사이트에서 벗어나 소비자들의 구매가 편하도록 만들어보았습니다.</li>
+          </ul>
+          <a href="https://1drv.ms/p/s!AlgNUjsaxDoVjEoWvCsiFb0ZYnzZ?e=UU46sm">기획서 보기</a>
+          <a href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1">와이어 프레임 보기</a>
+          <a href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21%3A22&mode=design&t=97yxN9QfwBf5efeh-1">메인페이지 디자인시안[웹, 앱]</a>
+        </div><!--//portfolio_info-->
+      </div><!--//portfolio-item-->
+
+      <div class="portfolio-item filter-clone flex">
+        <p><a href="https://mso901.github.io/Hong_Rui_Zhen/"><img src="img/portfolio/hong_mockup.png"alt=""></a></p>
+        <div class="portfolio_info">
+          <span>Clone</span>
+          <ul>
+            <li><strong>사이트명</strong>홍루이젠</li>
+            <li><strong>Skill</strong>float, position[크로스 브라우징 가능],html5<br>
+              a:hover, transform, animation, border 등 다양한 css 기능 사용</li>
+          </ul>
+          <a href="https://mso901.github.io/Hong_Rui_Zhen/">사이트 바로가기</a>
+        </div><!--//portfolio_info-->
+      </div><!--//portfolio-item-->
+
+      <div class="portfolio-item filter-clone flex">
+        <p><a href="https://mso901.github.io/kyochon/"><img src="img/portfolio/khochon_mockup.png"alt=""></a></p>
+        <div class="portfolio_info">
+          <span>Clone</span>
+          <ul>
+            <li><strong>사이트명</strong>교촌치킨</li>
+            <li><strong>Skill</strong>float, position[크로스 브라우징 가능], html5</li>
+            <li><strong>제작페이지</strong>메인페이지,매장안내,고객센터</li>
+          </ul>
+          <a href="https://mso901.github.io/kyochon/">사이트 바로가기</a>
+          <a href="https://mso901.github.io/kyochon/customer.html">상세페이지[고객센터]</a>
+          <a href="https://mso901.github.io/kyochon/store.html">상세페이지[매장안내]</a>
+        </div><!--//portfolio_info-->
+      </div><!--//portfolio-item-->
+
+      <div class="portfolio-item filter-challenge flex">
+        <p><a href="https://mso901.github.io/challenge_javascript/"><img src="img/portfolio/jschallenge_mockup.png"alt=""></a></p>
+        <div class="portfolio_info">
+          <span>challenge</span>
+          <ul>
+            <li><strong>사이트명</strong>[노마드코더]크롬 앱 따라 만들기</li>
+            <li><strong>Skill</strong>java script</li>
+            <li><strong>내용</strong>input, clock, romdom, 할일목록(데이터 관리), weather</li>
+          </ul>
+          <a href="https://mso901.github.io/challenge_javascript/">사이트 바로가기</a>
+        </div><!--//portfolio_info-->
+      </div><!--//portfolio-item-->
+
+      <div class="portfolio-text">
+        ⭐탭메뉴로의 이동을 확인해보면서 웹접근성을 높였고, 유효성검사를 통해 웹표준을 지켜 만들었습니다. 
+      </div>
+
+    </section>
+  </main>
+</html>
