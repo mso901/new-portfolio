@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
   <script src="js/main.js"></script>
 </head>
+
 <body>
   <header>
-    <div class="inner flex">
+    <div class="flex">
       <h1><a href="index.html">SUNOK</a></h1>
       <nav>
         <ul class="flex">
@@ -29,7 +31,7 @@
     </div>
   </header>
   <main>
-    <section id="home">
+    <section id="home" class="home">
       <div class="home_intro">
         <span class="bg01"></span>
         <span class="bg02"></span>
@@ -43,73 +45,80 @@
         </h3>
       </div>
     </section><!--//home-->
-    <div id="about">
-      <section class="about_me">
-        <div class="inner">
-          <h2>About me</h2>
-          <ul>
-            <li>✦ 민선옥</li>
-            <li>✦ 94.10.05</li>
-            <li>✦ 경상대학교 심리학과 졸업(경제학과 복수전공)</li>
-            <li>✦ 공인회계사 준비 후 웹퍼블리셔 과정 수강</li>
-          </ul>
+    <div id="about" class="about">
+      <div class="inner flex">
+        <div class="about_left">
+          <p>높은 배려와 이해, 강한 책임감으로 업무를 성공적으로 이끌며, 꼼꼼한 기록과 주도적인 문제 해결로 효율적인 결과물을 창출합니다.
+          <dl>
+            <dt>contact me</dt>
+            <dd>dnsmsdkdl@gmail.com</dd>
+          </dl>
         </div>
-      </section><!--//about_me-->
-      <section class="certificate">
-        <div class="inner">
-          <h2>certificate</h2>
-          <ul>
-            <li>👉 웹디자인기능사</li>
-            <li>👉 컴퓨터그래픽스기능사</li>
-            <li>👉 GTQ(포토샵) 1급</li>
-          </ul>
-        </div>
-      </section><!--//certificate-->
-      <section class="skills">
-        <div class="inner">
-          <h2>Skills</h2>
-          <ul class="flex">
-            <li>
-              <img src="img/skills/html.png" alt="html">
-              <span class="skill">HTML</span>
-            </li>
-            <li>
-              <img src="img/skills/css.png" alt="html">
-              <span class="skill">CSS</span>
-            </li>
-            <li>
-              <img src="img/skills/js.png" alt="html">
-              <span class="skill">JavaScript</span>
-            </li>
-            <li>
-              <img src="img/skills/icons8-jquery-150.png" alt="html">
-              <span class="skill">jQuery</span>
-            </li>
-            <li>
-              <img src="img/skills/apple-touch-icon.png" alt="html">
-              <span class="skill">bootstrap</span>
-            </li>
-            <li>
-              <img src="img/skills/icons8-git-150.png" alt="html">
-              <span class="skill">git</span>
-            </li>
-            <li>
-              <img src="img/skills/icons8-figma-144.png" alt="html">
-              <span class="skill">figma</span>
-            </li>
-            <li>
-              <img src="img/skills/free-icon-photoshop-5968520.png" alt="html">
-              <span class="skill">Photoshop</span>
-            </li>
-            <li>
-              <img src="img/skills/free-icon-illustrator-5968472.png" alt="html">
-              <span class="skill">illustrator</span>
-            </li>
-          </ul>
-        </div>
-      </section><!--//skills-->
-    </div><!--//#about-->
-    <section class="portfolio">     
+        <div class="about_right">
+          <section class="about_me">
+            <h2>민선옥</h2>
+            <ul>
+              <li>94.10.05</li>
+              <li>경상대학교 심리학과 졸업(경제학과 복수전공)</li>
+              <li>공인회계사 준비 후 웹퍼블리셔 과정 수강</li>
+            </ul>
+          </section><!--//about_me-->
+          <section class="certificate">
+            <h2>certificate</h2>
+            <ul>
+              <li>웹디자인기능사</li>
+              <li>컴퓨터그래픽스기능사</li>
+              <li>GTQ(포토샵) 1급</li>
+            </ul>
+          </section><!--//certificate-->
+          <section class="skills">
+
+            <h2>Skills</h2>
+            <ul class="flex">
+              <li>
+                <img src="img/skills/html.png" alt="html">
+                <span class="skill">HTML</span>
+              </li>
+              <li>
+                <img src="img/skills/css.png" alt="html">
+                <span class="skill">CSS</span>
+              </li>
+              <li>
+                <img src="img/skills/js.png" alt="html">
+                <span class="skill">JavaScript</span>
+              </li>
+              <li>
+                <img src="img/skills/icons8-jquery-150.png" alt="html">
+                <span class="skill">jQuery</span>
+              </li>
+              <li>
+                <img src="img/skills/apple-touch-icon.png" alt="html">
+                <span class="skill">bootstrap</span>
+              </li>
+              <li>
+                <img src="img/skills/icons8-git-150.png" alt="html">
+                <span class="skill">git</span>
+              </li>
+              <li>
+                <img src="img/skills/icons8-figma-144.png" alt="html">
+                <span class="skill">figma</span>
+              </li>
+              <li>
+                <img src="img/skills/free-icon-photoshop-5968520.png" alt="html">
+                <span class="skill">Photoshop</span>
+              </li>
+              <li>
+                <img src="img/skills/free-icon-illustrator-5968472.png" alt="html">
+                <span class="skill">illustrator</span>
+              </li>
+            </ul>
+
+          </section><!--//skills-->
+        </div><!--//about_right-->
+      </div><!--//inner-->
+    </div><!--//about-->
+
+    <section id="portfolio" class="portfolio inner">
       <h2>Works</h2>
       <ul id="portfolio-flters">
         <li data-filter="*" class="filter-active">All</li>
@@ -120,7 +129,7 @@
       </ul>
 
       <div class="portfolio-item filter-new flex">
-        <p><a href="https://mso901.github.io/HiEgo/"><img src="img/portfolio/hiego_mockup.png"alt=""></a></p>
+        <p><a href="https://mso901.github.io/HiEgo/"><img src="img/portfolio/hiego_mockup.png" alt=""></a></p>
         <div class="portfolio_info">
           <span>New</span>
           <ul>
@@ -133,7 +142,7 @@
       </div><!--//portfolio-item-->
 
       <div class="portfolio-item filter-new flex">
-        <p><a href="https://mso901.github.io/goroot/"><img src="img/portfolio/goroot_mockup.png"alt=""></a></p>
+        <p><a href="https://mso901.github.io/goroot/"><img src="img/portfolio/goroot_mockup.png" alt=""></a></p>
         <div class="portfolio_info">
           <span>New</span>
           <ul>
@@ -146,7 +155,9 @@
       </div><!--//portfolio-item-->
 
       <div class="portfolio-item filter-plan flex">
-        <p><a href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1"><img src="img/portfolio/sidmool_1.png"alt=""></a></p>
+        <p><a
+            href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1"><img
+              src="img/portfolio/sidmool_1.png" alt=""></a></p>
         <div class="portfolio_info">
           <span>Plan[기획]</span>
           <ul>
@@ -155,13 +166,17 @@
             <li><strong>기획의도</strong>기존의 사용하기 힘들고 복잡한 사이트에서 벗어나 소비자들의 구매가 편하도록 만들어보았습니다.</li>
           </ul>
           <a href="https://1drv.ms/p/s!AlgNUjsaxDoVjEoWvCsiFb0ZYnzZ?e=UU46sm">기획서 보기</a>
-          <a href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1">와이어 프레임 보기</a>
-          <a href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21%3A22&mode=design&t=97yxN9QfwBf5efeh-1">메인페이지 디자인시안[웹, 앱]</a>
+          <a
+            href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1">와이어
+            프레임 보기</a>
+          <a
+            href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21%3A22&mode=design&t=97yxN9QfwBf5efeh-1">메인페이지
+            디자인시안[웹, 앱]</a>
         </div><!--//portfolio_info-->
       </div><!--//portfolio-item-->
 
       <div class="portfolio-item filter-clone flex">
-        <p><a href="https://mso901.github.io/Hong_Rui_Zhen/"><img src="img/portfolio/hong_mockup.png"alt=""></a></p>
+        <p><a href="https://mso901.github.io/Hong_Rui_Zhen/"><img src="img/portfolio/hong_mockup.png" alt=""></a></p>
         <div class="portfolio_info">
           <span>Clone</span>
           <ul>
@@ -174,7 +189,7 @@
       </div><!--//portfolio-item-->
 
       <div class="portfolio-item filter-clone flex">
-        <p><a href="https://mso901.github.io/kyochon/"><img src="img/portfolio/khochon_mockup.png"alt=""></a></p>
+        <p><a href="https://mso901.github.io/kyochon/"><img src="img/portfolio/khochon_mockup.png" alt=""></a></p>
         <div class="portfolio_info">
           <span>Clone</span>
           <ul>
@@ -189,7 +204,8 @@
       </div><!--//portfolio-item-->
 
       <div class="portfolio-item filter-challenge flex">
-        <p><a href="https://mso901.github.io/challenge_javascript/"><img src="img/portfolio/jschallenge_mockup.png"alt=""></a></p>
+        <p><a href="https://mso901.github.io/challenge_javascript/"><img src="img/portfolio/jschallenge_mockup.png"
+              alt=""></a></p>
         <div class="portfolio_info">
           <span>challenge</span>
           <ul>
@@ -202,9 +218,10 @@
       </div><!--//portfolio-item-->
 
       <div class="portfolio-text">
-        ⭐탭메뉴로의 이동을 확인해보면서 웹접근성을 높였고, 유효성검사를 통해 웹표준을 지켜 만들었습니다. 
+        ⭐탭메뉴로의 이동을 확인해보면서 웹접근성을 높였고, 유효성검사를 통해 웹표준을 지켜 만들었습니다.
       </div>
 
     </section>
   </main>
+
 </html>
