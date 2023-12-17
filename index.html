@@ -14,7 +14,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+  <script src="js/isotope.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
 </head>
 
 <body>
@@ -31,7 +33,7 @@
     </div>
   </header>
   <main>
-    <section id="home" class="home">
+    <section id="home" class="home content">
       <div class="home_intro">
         <span class="bg01"></span>
         <span class="bg02"></span>
@@ -45,9 +47,14 @@
         </h3>
       </div>
     </section><!--//home-->
-    <div id="about" class="about">
+
+    <div id="about" class="about content">
       <div class="inner flex">
         <div class="about_left">
+          <h2>About me</h2>
+          <section class="about_me">
+            <h3>민선옥</h3>
+          </section><!--//about_me-->
           <p>높은 배려와 이해, 강한 책임감으로 업무를 성공적으로 이끌며, 꼼꼼한 기록과 주도적인 문제 해결로 효율적인 결과물을 창출합니다.
           <dl>
             <dt>contact me</dt>
@@ -55,16 +62,8 @@
           </dl>
         </div>
         <div class="about_right">
-          <section class="about_me">
-            <h2>민선옥</h2>
-            <ul>
-              <li>94.10.05</li>
-              <li>경상대학교 심리학과 졸업(경제학과 복수전공)</li>
-              <li>공인회계사 준비 후 웹퍼블리셔 과정 수강</li>
-            </ul>
-          </section><!--//about_me-->
           <section class="certificate">
-            <h2>certificate</h2>
+            <h3>Certificate</h3>
             <ul>
               <li>웹디자인기능사</li>
               <li>컴퓨터그래픽스기능사</li>
@@ -73,152 +72,214 @@
           </section><!--//certificate-->
           <section class="skills">
 
-            <h2>Skills</h2>
-            <ul class="flex">
-              <li>
-                <img src="img/skills/html.png" alt="html">
-                <span class="skill">HTML</span>
+            <h3>Skills</h3>
+            <ul>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/html.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">HTML</span>
+                  html5를 활용한 웹표준에 맞는 시멘틱한 태그를 쓸 줄 알고, 코드의 순서를 통해 웹접근성을 고려하여 코드를 짤 수 있습니다.
+                </div>
               </li>
-              <li>
-                <img src="img/skills/css.png" alt="html">
-                <span class="skill">CSS</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/css.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">CSS</span>
+                  flex, gird는 물론 scss와 sass까지 최신 css 동향을 모두 파악하고 있으며, 크로스 브라우징을 위해 float와 positon만을 이용해 사이트를 구현할 수 있습니다.
+                  <br>예시&#41; 클론사이트 : 홍루이젠, 교촌치킨
+                </div>
               </li>
-              <li>
-                <img src="img/skills/js.png" alt="html">
-                <span class="skill">JavaScript</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/js.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">JavaScript</span>
+                  자바스크립트를 활용한 랜덤 숫자 게임을 만들 수 있고, localstorage를 사용자가 입력한 데이터를 관리할 수 있습니다.
+                  <br>예시&#41; 챌린지 : 바닐라 js로 momentum 앱 만들기
+                </div>
               </li>
-              <li>
-                <img src="img/skills/icons8-jquery-150.png" alt="html">
-                <span class="skill">jQuery</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/icons8-jquery-150.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">jQuery</span>
+                  제이쿼리를 활용해 이미지 슬라이드, 팝업, 탭메뉴 등의 코드를 짤 수 있으며, 다양한 cdn을 활용해 원하는 이벤트를 발생시킬 수 있습니다.
+                </div>
               </li>
-              <li>
-                <img src="img/skills/apple-touch-icon.png" alt="html">
-                <span class="skill">bootstrap</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/apple-touch-icon.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">bootstrap</span>
+                  부트스트랩의 기본적인 원리를 이해하고 있으며, 그리드를 활용해 간단한 레이아웃을 짤 수 있습니다.
+                </div>
               </li>
-              <li>
-                <img src="img/skills/icons8-git-150.png" alt="html">
-                <span class="skill">git</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/icons8-git-150.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">git</span>
+                  branch를 만들고 merge, rebase로 합칠 수 있으며, 이때 발생하는 충돌을 해결하기 위한 방안도 알고 있습니다.
+                  또한 reset, revert 등을 활용해 버전을 관리할 수 있으며, 깃허브를 활용해 데이터를 원격저장소로 이동 시킬 수 있습니다.
+                </div>
               </li>
-              <li>
-                <img src="img/skills/icons8-figma-144.png" alt="html">
-                <span class="skill">figma</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/icons8-figma-144.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">figma</span>
+                  figma를 활용한 웹 디자인이 가능하며, 와이어프레임 등을 활용해 이를 구현할 수 있다.
+                </div>
               </li>
-              <li>
-                <img src="img/skills/free-icon-photoshop-5968520.png" alt="html">
-                <span class="skill">Photoshop</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/free-icon-photoshop-5968520.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">Photoshop</span>
+                  포토샵의 기본적인 기능들을 사용할 수 있으며, 이미지를 자연스럽게 합성하거나 배너 이미지를 만들 수 있습니다.
+                  <br>예시&#41; 컴퓨터그래픽스기능사 취득, GTQ 취득
+                </div>
               </li>
-              <li>
-                <img src="img/skills/free-icon-illustrator-5968472.png" alt="html">
-                <span class="skill">illustrator</span>
+              <li class="flex">
+                <div class="skill_left">
+                  <img src="img/skills/free-icon-illustrator-5968472.png" alt="html">
+                </div>
+                <div class="skill_right">
+                  <span class="skill">illustrator</span>
+                  일러스트의 기본적인 기능들을 사용할 수 있으며, 이를 이용해 로고 디자인, 캐릭터 디자인 등을 만들 수 있다.
+                  <br>예시&#41; 컴퓨터그래픽스기능사 자격증 취득, GTQi 취득
+                </div>
               </li>
             </ul>
 
           </section><!--//skills-->
+
         </div><!--//about_right-->
+
       </div><!--//inner-->
     </div><!--//about-->
 
-    <section id="portfolio" class="portfolio inner">
+    <section id="portfolio" class="portfolio content inner">
       <h2>Works</h2>
-      <ul id="portfolio-flters">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-new">New</li>
-        <li data-filter=".filter-plan">Plan</li>
-        <li data-filter=".filter-clone">Clone</li>
-        <li data-filter=".filter-challenge">Challenge</li>
-      </ul>
+      <div class="flex">
+        <ul class="portfolio-flters">
+          <li class="data filter-active" data-filter="*">All</li>
+          <li class="data" data-filter=".filter-new">New</li>
+          <li class="data" data-filter=".filter-plan">Plan</li>
+          <li class="data" data-filter=".filter-
+              Responsive">Responsive</li>
+          <li class="data" data-filter=".filter-clone">Clone</li>
+          <li class="data" data-filter=".filter-challenge">Challenge</li>
+        </ul>
+      </div>
 
-      <div class="portfolio-item filter-new flex">
-        <p><a href="https://mso901.github.io/HiEgo/"><img src="img/portfolio/hiego_mockup.png" alt=""></a></p>
-        <div class="portfolio_info">
-          <span>New</span>
-          <ul>
-            <li><strong>사이트명</strong>HiEgo</li>
-            <li><strong>Skill</strong>grid, flex, slick-slide</li>
-            <li><strong>기획의도</strong>심리검사를 등재할 수 있는 플랫폼을 만들어 소비자와 판매자의 연계를 더욱 쉽게 할 수 있도록 하였습니다.</li>
-          </ul>
-          <a href="https://mso901.github.io/HiEgo/">사이트 바로가기</a>
-        </div><!--//portfolio_info-->
-      </div><!--//portfolio-item-->
+      <div class="portfolio-container">
 
-      <div class="portfolio-item filter-new flex">
-        <p><a href="https://mso901.github.io/goroot/"><img src="img/portfolio/goroot_mockup.png" alt=""></a></p>
-        <div class="portfolio_info">
-          <span>New</span>
-          <ul>
-            <li><strong>사이트명</strong>goroot(고루트)</li>
-            <li><strong>Skill</strong>flex, slick-slide,html5</li>
-            <li><strong>기획의도</strong>유통단계의 단축으로 소비자와 판매자가 합리적인 거래를 할 수 있도록 농수산물 직거래 사이트를 만들었습니다.</li>
-          </ul>
-          <a href="https://mso901.github.io/goroot/">사이트 바로가기</a>
-        </div><!--//portfolio_info-->
-      </div><!--//portfolio-item-->
+        <div class="filter-new filter-Responsive portfolio-item flex">
+          <p><a href="https://mso901.github.io/HiEgo/"><img src="img/portfolio/hiego_mockup.png" alt=""></a></p>
+          <div class="portfolio_info">
+            <span>New</span>
+            <span class="react">responsive</span>
+            <ul>
+              <li><strong>사이트명</strong>HiEgo</li>
+              <li><strong>Skill</strong>grid, flex, slick-slide</li>
+              <li><strong>기획의도</strong>심리검사를 등재할 수 있는 플랫폼을 만들어 소비자와 판매자의 연계를 더욱 쉽게 할 수 있도록 하였습니다.</li>
+            </ul>
+            <a href="https://mso901.github.io/HiEgo/">사이트 바로가기</a>
+          </div><!--//portfolio_info-->
+        </div><!--//portfolio-item-->
 
-      <div class="portfolio-item filter-plan flex">
-        <p><a
-            href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1"><img
-              src="img/portfolio/sidmool_1.png" alt=""></a></p>
-        <div class="portfolio_info">
-          <span>Plan[기획]</span>
-          <ul>
-            <li><strong>사이트명</strong>시드물</li>
-            <li><strong>Skill</strong>flex, slick-slide,html5</li>
-            <li><strong>기획의도</strong>기존의 사용하기 힘들고 복잡한 사이트에서 벗어나 소비자들의 구매가 편하도록 만들어보았습니다.</li>
-          </ul>
-          <a href="https://1drv.ms/p/s!AlgNUjsaxDoVjEoWvCsiFb0ZYnzZ?e=UU46sm">기획서 보기</a>
-          <a
-            href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1">와이어
-            프레임 보기</a>
-          <a
-            href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21%3A22&mode=design&t=97yxN9QfwBf5efeh-1">메인페이지
-            디자인시안[웹, 앱]</a>
-        </div><!--//portfolio_info-->
-      </div><!--//portfolio-item-->
+        <div class="filter-new portfolio-item  flex">
+          <p><a href="https://mso901.github.io/goroot/"><img src="img/portfolio/goroot_mockup.png" alt=""></a></p>
+          <div class="portfolio_info">
+            <span>New</span>
+            <span></span>
+            <ul>
+              <li><strong>사이트명</strong>goroot(고루트)</li>
+              <li><strong>Skill</strong>flex, slick-slide,html5</li>
+              <li><strong>기획의도</strong>유통단계의 단축으로 소비자와 판매자가 합리적인 거래를 할 수 있도록 농수산물 직거래 사이트를 만들었습니다.</li>
+            </ul>
+            <a href="https://mso901.github.io/goroot/">사이트 바로가기</a>
+          </div><!--//portfolio_info-->
+        </div><!--//portfolio-item-->
 
-      <div class="portfolio-item filter-clone flex">
-        <p><a href="https://mso901.github.io/Hong_Rui_Zhen/"><img src="img/portfolio/hong_mockup.png" alt=""></a></p>
-        <div class="portfolio_info">
-          <span>Clone</span>
-          <ul>
-            <li><strong>사이트명</strong>홍루이젠</li>
-            <li><strong>Skill</strong>float, position[크로스 브라우징 가능],html5<br>
-              a:hover, transform, animation, border 등 다양한 css 기능 사용</li>
-          </ul>
-          <a href="https://mso901.github.io/Hong_Rui_Zhen/">사이트 바로가기</a>
-        </div><!--//portfolio_info-->
-      </div><!--//portfolio-item-->
+        <div class="filter-plan portfolio-item  flex">
+          <p><a
+              href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1"><img
+                src="img/portfolio/sidmool_1.png" alt=""></a></p>
+          <div class="portfolio_info">
+            <span class="plan">Plan[기획]</span>
+            <ul>
+              <li><strong>사이트명</strong>시드물</li>
+              <li><strong>Skill</strong>flex, slick-slide,html5</li>
+              <li><strong>기획의도</strong>기존의 사용하기 힘들고 복잡한 사이트에서 벗어나 소비자들의 구매가 편하도록 만들어보았습니다.</li>
+            </ul>
+            <a href="https://1drv.ms/p/s!AlgNUjsaxDoVjEoWvCsiFb0ZYnzZ?e=UU46sm">기획서 보기</a>
+            <a
+              href="https://www.figma.com/file/zepUMrAspug9qOkBJxHSpR/sidmool_y?type=design&node-id=13%3A3&mode=design&t=97yxN9QfwBf5efeh-1">와이어
+              프레임 보기</a>
+            <a
+              href="https://www.figma.com/file/WCXNTAtgc0uAyZq7LvmMmO/sidmool?type=design&node-id=21%3A22&mode=design&t=97yxN9QfwBf5efeh-1">메인페이지
+              디자인시안[웹, 앱]</a>
+          </div><!--//portfolio_info-->
+        </div><!--//portfolio-item-->
 
-      <div class="portfolio-item filter-clone flex">
-        <p><a href="https://mso901.github.io/kyochon/"><img src="img/portfolio/khochon_mockup.png" alt=""></a></p>
-        <div class="portfolio_info">
-          <span>Clone</span>
-          <ul>
-            <li><strong>사이트명</strong>교촌치킨</li>
-            <li><strong>Skill</strong>float, position[크로스 브라우징 가능], html5</li>
-            <li><strong>제작페이지</strong>메인페이지,매장안내,고객센터</li>
-          </ul>
-          <a href="https://mso901.github.io/kyochon/">사이트 바로가기</a>
-          <a href="https://mso901.github.io/kyochon/customer.html">상세페이지[고객센터]</a>
-          <a href="https://mso901.github.io/kyochon/store.html">상세페이지[매장안내]</a>
-        </div><!--//portfolio_info-->
-      </div><!--//portfolio-item-->
+        <div class="filter-clone portfolio-item  flex">
+          <p><a href="https://mso901.github.io/Hong_Rui_Zhen/"><img src="img/portfolio/hong_mockup.png" alt=""></a></p>
+          <div class="portfolio_info">
+            <span class="Clone">Clone</span>
+            <ul>
+              <li><strong>사이트명</strong>홍루이젠</li>
+              <li><strong>Skill</strong>float, position[크로스 브라우징 가능],html5<br>
+                a:hover, transform, animation, border 등 다양한 css 기능 사용</li>
+            </ul>
+            <a href="https://mso901.github.io/Hong_Rui_Zhen/">사이트 바로가기</a>
+          </div><!--//portfolio_info-->
+        </div><!--//portfolio-item-->
 
-      <div class="portfolio-item filter-challenge flex">
-        <p><a href="https://mso901.github.io/challenge_javascript/"><img src="img/portfolio/jschallenge_mockup.png"
-              alt=""></a></p>
-        <div class="portfolio_info">
-          <span>challenge</span>
-          <ul>
-            <li><strong>사이트명</strong>[노마드코더]크롬 앱 따라 만들기</li>
-            <li><strong>Skill</strong>java script</li>
-            <li><strong>내용</strong>input, clock, romdom, 할일목록(데이터 관리), weather</li>
-          </ul>
-          <a href="https://mso901.github.io/challenge_javascript/">사이트 바로가기</a>
-        </div><!--//portfolio_info-->
-      </div><!--//portfolio-item-->
+        <div class="filter-clone portfolio-item  flex">
+          <p><a href="https://mso901.github.io/kyochon/"><img src="img/portfolio/khochon_mockup.png" alt=""></a></p>
+          <div class="portfolio_info">
+            <span class="Clone">Clone</span>
+            <ul>
+              <li><strong>사이트명</strong>교촌치킨</li>
+              <li><strong>Skill</strong>float, position[크로스 브라우징 가능], html5</li>
+              <li><strong>제작페이지</strong>메인페이지,매장안내,고객센터</li>
+            </ul>
+            <a href="https://mso901.github.io/kyochon/">사이트 바로가기</a>
+            <a href="https://mso901.github.io/kyochon/customer.html">상세페이지[고객센터]</a>
+            <a href="https://mso901.github.io/kyochon/store.html">상세페이지[매장안내]</a>
+          </div><!--//portfolio_info-->
+        </div><!--//portfolio-item-->
+
+        <div class="filter-challenge portfolio-item  flex">
+          <p><a href="https://mso901.github.io/challenge_javascript/"><img src="img/portfolio/jschallenge_mockup.png"
+                alt=""></a></p>
+          <div class="portfolio_info">
+            <span class="challenge">challenge</span>
+            <ul>
+              <li><strong>사이트명</strong>[노마드코더]크롬 앱 따라 만들기</li>
+              <li><strong>Skill</strong>java script</li>
+              <li><strong>내용</strong>input, clock, romdom, 할일목록(데이터 관리), weather</li>
+            </ul>
+            <a href="https://mso901.github.io/challenge_javascript/">사이트 바로가기</a>
+          </div><!--//portfolio_info-->
+        </div><!--//portfolio-item-->
+
+      </div><!--//portfolio-container-->
 
       <div class="portfolio-text">
-        ⭐탭메뉴로의 이동을 확인해보면서 웹접근성을 높였고, 유효성검사를 통해 웹표준을 지켜 만들었습니다.
+        ⭐ 탭메뉴로의 이동을 확인해보면서 웹접근성을 높였고, 유효성검사를 통해 웹표준을 지켜 만들었습니다.
       </div>
 
     </section>

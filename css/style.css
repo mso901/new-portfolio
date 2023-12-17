@@ -1,11 +1,13 @@
-html{
+/** @format */
+
+html {
   font-size: 10px;
 }
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   color: #272829;
 }
-.inner{
+.inner {
   width: 90%;
   max-width: 1280px;
   margin: auto;
@@ -28,60 +30,55 @@ header {
   height: 60px;
   transition: all ease-in-out 0.5s;
   padding: 0 15px;
-  line-height: 50px;
   background-color: transparent;
 }
 
 header.on {
-  background: #1e395c;
+  background: #000;
 }
 
-header > div{
+header > div {
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
-header h1 a{
+header h1 a {
   color: #fff;
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-nav a{
+nav li {
+  padding-left: 15px;
+}
+
+nav a span {
+  padding-right: 8px;
   color: #a8a9b4;
   font-size: 1.7rem;
 }
 
-nav a span{
-  padding-right: 8px;
-  color: #6f7180;
-}
-
-nav li:hover > a {
+nav li:hover > a span {
   color: #fff;
-  font-weight: 700;
-}
-
-nav li:hover > a span{
-  color: #149ddd;
 }
 
 /*main*/
 /*home*/
-.home{
+.home {
   position: relative;
   width: 100%;
   height: 100vh;
   background: #fff;
 }
-.home .home_intro{
+.home .home_intro {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.home .home_title{
+.home .home_title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,7 +89,7 @@ nav li:hover > a span{
   line-height: 1.4;
   font-weight: 500;
 }
-.home .home_title span{
+.home .home_title span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -100,7 +97,7 @@ nav li:hover > a span{
   opacity: 0;
   text-transform: uppercase;
   font-size: 120px;
-  font-family: "Black Han Sans", sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 /*about*/
@@ -108,77 +105,89 @@ section {
   padding-bottom: 40px;
   overflow: hidden;
 }
-h2{
+h2 {
+  padding-bottom: 20px;
+  font-size: 3.4rem;
+  font-weight: 600;
+}
+h3 {
   padding-bottom: 20px;
   font-size: 2.8rem;
   font-weight: 500;
 }
 
-.about .inner{
+.about .inner {
   width: 100%;
-  max-width: 2500px;
+  max-width: 1920px;
 }
-.about .about_left{
+.about .about_left {
   position: sticky;
-  padding: 100px;
+  top: 60px;
+  padding: 80px;
   width: 40%;
-  height: 100vh;
+  height: 100%;
+  color: #fff;
   font-size: 2.2rem;
-  font-weight: 300;
   line-height: 40px;
   word-break: keep-all;
-  background-color: rgb(243, 244, 253);
+  background-color: gray;
 }
-.about_left dl{
-  padding-top: 200px;
+.about_left dl {
+  padding-top: 400px;
 }
-.about_left dt{
+.about_left dt {
   font-weight: 500;
 }
-.about .about_right{
-  padding: 100px;
+.about .about_right {
+  padding: 100px 50px 0 80px;
   width: 60%;
 }
-.about_right li{
+.about_right li {
   font-size: 2rem;
-  font-weight: 300;
   line-height: 40px;
 }
 
-.about_right .skills ul{
-  flex-wrap: wrap;
+.skills li{
+  flex-wrap: nowrap;
+  margin: 20px 5px;
+  padding: 10px;
+  width: 90%;
+  line-height: 30px;
+  box-shadow: 0 0 15px -8px #999;
+  border-radius: 10px;
 }
-.about_right .skills li{
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-}
-
-.skills li img {
-  margin: 15px;
+.skills .skill_left img {
   width: 60px;
+  padding-top: 15px;
 }
 
-.skills span {
+.skills .skill_right span {
   display: block;
-  text-align: center;
+  font-size: 1.4rem;
+}
+.skills .skill_right{
+  padding-left: 20px;
+  word-break: break-all;
+  font-size: 1.8rem;
 }
 
 /*Portfolio*/
-.portfolio{
+.portfolio {
   padding: 100px 0;
 }
-.portfolio #portfolio-flters{
-  display: inline-flex;
-  margin: 10px 0 30px;
-  padding: 7px 14px;
-  white-space: nowrap;
-  border-radius: 30px;
-  background-color: rgb(243, 244, 253);
+.portfolio > div {
+  justify-content: center;
 }
-.portfolio #portfolio-flters li {
+.portfolio .portfolio-flters {
+  display: inline-block;
+  margin: 10px auto 30px;
+  padding: 5px 16px;
+}
+.portfolio .portfolio-flters li {
+  display: inline-block;
   cursor: pointer;
-  padding: 10px 15px 8px 15px;
-  font-size: 1.8rem;
+  padding: 10px 20px 8px;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
@@ -186,8 +195,8 @@ h2{
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio .portfolio-flters li:hover,
+.portfolio .portfolio-flters li.filter-active {
   color: #149ddd;
 }
 
@@ -197,7 +206,11 @@ h2{
   line-height: 40px;
 }
 
-.portfolio .portfolio-item > p{
+.hidden {
+  display: none;
+}
+
+.portfolio .portfolio-item > p {
   width: 50%;
 }
 
@@ -214,11 +227,14 @@ h2{
 
 .portfolio .portfolio_info span {
   display: inline-block;
-  margin-bottom: 10px;
+  margin: 0 7px 10px 0;
   padding: 0px 8px;
   color: white;
   background-color: #173b6c;
   border-radius: 5px;
+}
+.portfolio .portfolio_info .react {
+  background-color: #5387db;
 }
 
 .portfolio .portfolio_info .plan {
@@ -228,7 +244,9 @@ h2{
 .portfolio .portfolio_info .clone {
   background-color: darkgreen;
 }
-
+.portfolio .portfolio_info .challenge {
+  background-color: lightskyblue;
+}
 .portfolio .portfolio_info li {
   margin-bottom: 5px;
 }

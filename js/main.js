@@ -1,9 +1,10 @@
-$(function(){
+$(function () {
+  /*home*/
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $("#header").addClass("on")
+      $("header").addClass("on")
     } else {
-      $("#header").removeClass("on");
+      $("header").removeClass("on");
     }
   });
   
@@ -34,4 +35,14 @@ $(function(){
     )
     .set(".home_title span:nth-child(4)", { filter: "blur(0px)" });
 
+  
+  /*portfolio*/
+  // $(".data").click(function (e) {
+  //   e.preventDefault();
+  //   let current = $(this).attr("data-name");
+  //   $(".item").addClass("hidden");
+  //   $("#" + current).removeClass("hidden");
+
+  //   $(this).addClass("filter-active").siblings().removeClass("filter-active");
+  // });
 });
