@@ -1,22 +1,20 @@
 /** @format */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 html {
   font-size: 10px;
 }
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-weight: 300;
   color: #272829;
 }
 .inner {
   width: 90%;
   max-width: 1280px;
   margin: auto;
-}
-a {
-  color: #149ddd;
-}
-a:hover {
-  color: #37b3ed;
 }
 
 /*header*/
@@ -47,6 +45,7 @@ header h1 a {
   color: #fff;
   font-size: 2.4rem;
   font-weight: 400;
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 nav li {
@@ -56,7 +55,7 @@ nav li {
 nav a span {
   padding-right: 8px;
   color: #a8a9b4;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 nav li:hover > a span {
@@ -128,6 +127,7 @@ h3 {
   height: 100%;
   color: #fff;
   font-size: 2.2rem;
+    font-family: 'Gowun Dodum', sans-serif;
   line-height: 40px;
   word-break: keep-all;
   background-color: gray;
@@ -184,9 +184,10 @@ h3 {
   padding: 5px 16px;
 }
 .portfolio .portfolio-flters li {
+  position: relative;
   display: inline-block;
   cursor: pointer;
-  padding: 10px 20px 8px;
+  margin: 10px 20px 8px;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1;
@@ -195,9 +196,18 @@ h3 {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.portfolio .portfolio-flters li:hover,
-.portfolio .portfolio-flters li.filter-active {
-  color: #149ddd;
+
+.portfolio-flters li:hover::after,
+.portfolio-flters li.filter-active::after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 10px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: rgba(20,157,221,0.5);
 }
 
 .portfolio .portfolio-item {

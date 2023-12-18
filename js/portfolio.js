@@ -1,15 +1,16 @@
 /** @format */
 
 $(function () {
-  $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-item',
+  var $grid = $(".portfolio-container").isotope({
+    itemSelector: ".portfolio-item",
+    layoutMode: "fitRows",
+    stagger: 100,
   });
 
-  // filter items on button click
-  $('.portfolio-flters').on('click', 'li', function () {
-    var filterValue = $(this).find().attr('data-filter');
-    $('.portfolio-container').isotope({ filter: filterValue });
-    $('.portfolio-flters li').removeClass('filter-active');
-    $(this).addClass('filter-active');
+  $(".portfolio-flters").on("click", "li", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+
+    $(this).addClass("filter-active").siblings().removeClass("filter-active");
   });
 });
