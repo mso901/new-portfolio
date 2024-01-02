@@ -2,12 +2,12 @@ $(function () {
   /*home*/
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $("header").addClass("on")
+      $("header").addClass("on");
     } else {
       $("header").removeClass("on");
     }
   });
-  
+
   gsap.to(window, 0.2, { scrollTo: 0 });
 
   var intro = gsap.timeline({
@@ -27,22 +27,11 @@ $(function () {
     .to(".home_title span:nth-child(4)", 0.5, { "font-size": "150px" })
     .addLabel("m1")
     .to(window, 1.4, { scrollTo: "#about" }, "m1")
-    .to(
-      ".home_title span:nth-child(4)",
-      1,
-      { filter: "blur(10px)" },
-      "m1"
-    )
+    .to(".home_title span:nth-child(4)", 1, { filter: "blur(10px)" }, "m1")
     .set(".home_title span:nth-child(4)", { filter: "blur(0px)" });
 
-  
-  /*portfolio*/
-  // $(".data").click(function (e) {
-  //   e.preventDefault();
-  //   let current = $(this).attr("data-name");
-  //   $(".item").addClass("hidden");
-  //   $("#" + current).removeClass("hidden");
-
-  //   $(this).addClass("filter-active").siblings().removeClass("filter-active");
-  // });
+  /*Skill*/
+  $(".skills li").click(function () { 
+    $(this).addClass("on").siblings().removeClass("on");
+  });
 });

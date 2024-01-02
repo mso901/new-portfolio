@@ -1,13 +1,13 @@
 /** @format */
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 html {
   font-size: 10px;
 }
 body {
   /* font-family: 'Noto Sans KR', sans-serif; */
-  font-family: 'Nanum Gothic', sans-serif;
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   font-weight: 300;
   color: #272829;
 }
@@ -116,7 +116,7 @@ h3 {
   font-weight: 500;
 }
 .about {
-  background-color: rgb(250,250,251);
+  background-color: rgb(250, 250, 251);
 }
 .about .inner {
   width: 100%;
@@ -126,11 +126,11 @@ h3 {
   position: sticky;
   top: 60px;
   padding: 80px;
-  width: 40%;
+  width: 30%;
   height: 100%;
   color: #fff;
   font-size: 2.2rem;
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   line-height: 40px;
   word-break: keep-all;
   background-color: gray;
@@ -139,42 +139,60 @@ h3 {
   padding-top: 400px;
 }
 .about_left dt {
-  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 600;
 }
 .about .about_right {
-  padding: 100px 50px 0 80px;
-  width: 60%;
+  padding: 100px 50px 100px 80px;
+  width: 70%;
 }
 .about_right li {
   font-size: 2rem;
   line-height: 40px;
 }
 
+.skills ul {
+  position: relative;
+  width: auto;
+  min-width: 80%;
+  background-color: #eeeeee;
+  border-radius: 30px;
+}
+
 .skills li {
-  flex-wrap: nowrap;
-  margin: 20px 5px;
-  padding: 10px;
-  width: 90%;
-  line-height: 30px;
+  padding: 0 30px;
+  height: 350px;
+  border-radius: 30px;
+}
+.skills li.on {
   background-color: #fff;
-  box-shadow: 0 0 15px -8px #999;
-  border-radius: 10px;
 }
 .skills .skill_left img {
   width: 60px;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
+.skills .skill_right {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  display: none;
+  padding: 30px;
+  width: 100%;
+  height: 230px;
+  word-break: break-all;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border-radius: 0 0 30px 30px;
+}
+.skills .on .skill_right{
+  display: block;
+}
 .skills .skill_right span {
   display: block;
   font-size: 1.4rem;
 }
-.skills .skill_right {
-  padding-left: 20px;
-  word-break: break-all;
-  font-size: 1.8rem;
-}
-
 /*Portfolio*/
 .portfolio {
   padding: 100px 0;
@@ -208,7 +226,7 @@ h3 {
   left: 0;
   top: 10px;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 10px;
   background-color: rgba(28, 162, 234, 0.539);
@@ -277,8 +295,8 @@ h3 {
 }
 .portfolio .portfolio_info a:hover {
   color: #000;
-   background-color: #fff;
-   border: 1px solid #000;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 .portfolio .portfolio-text {
   margin-top: 50px;
