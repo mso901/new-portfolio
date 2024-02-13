@@ -293,6 +293,9 @@ h3 {
   background-color: #000;
   border-radius: 10px;
 }
+.portfolio .portfolio_info a.codeLook {
+  background-color: #4f81be;
+}
 .portfolio .portfolio_info a:hover {
   color: #000;
   background-color: #fff;
