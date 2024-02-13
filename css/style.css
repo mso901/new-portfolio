@@ -100,7 +100,7 @@ nav li:hover > a span {
   /* font-family: 'Black Han Sans', sans-serif; */
 }
 
-/*about*/
+/*about, left*/
 section {
   padding-bottom: 40px;
   overflow: hidden;
@@ -152,6 +152,10 @@ h3 {
   line-height: 40px;
 }
 
+/*about, right*/
+.education li a{
+  text-decoration: underline;
+}
 .skills ul {
   position: relative;
   width: auto;
